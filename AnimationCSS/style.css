@@ -39,10 +39,57 @@ body{
     background-color: red;
     width: 100px;
     height: 100px;
+    transition: 4s;
     
 }
 
 .square3:hover{
-    transform: rotate(20°);
+
+    transform: rotate(180deg);
     
+}
+
+.square4{
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+    animation-name: size;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes size{
+    from{width:100px;
+         height: 100px;}
+
+     to{width:200px;
+       height: 200px;}
+}
+
+.square5{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin-left: 500px;
+    animation: effect 5s infinite;
+}
+
+@keyframes effect{
+    from {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    to {
+        transform: translate(100px, 100px) rotate(180deg) scale(2);
+    }
+}
+ 
+.square6{
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    transition: 4s;
+}
+
+.square6:hover{
+    background-color: blueviolet;
 }
